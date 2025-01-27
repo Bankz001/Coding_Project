@@ -22,7 +22,12 @@ def txt_to_wordlist(file_path):
 file_path = './wordle/valid-wordle-words.txt'  # Replace with your file path
 word_list = txt_to_wordlist(file_path)
 
-print(random.choice(word_list))  # Prints the list of words
+word = random.choice(word_list)
+answer = input("Enter a 5 letters word : ")
 
+if answer == word :
+    print("correct")
+else : 
+    print("not correct")
 
-
+print(word)
