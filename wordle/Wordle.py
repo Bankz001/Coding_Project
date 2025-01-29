@@ -17,7 +17,8 @@ def txt_to_wordlist(file_path):
         return []
 
 def answering():
-    answer = input("Enter a 5 letters word : ")
+    ans = input("Enter a 5 letters word : ")
+    answer = ans.lower()
     while len(answer) != 5:
         print("Invalid answer")
         answer = input("Enter a 5 letters word : ")
@@ -27,7 +28,7 @@ file_path = './wordle/valid-wordle-words.txt'  # Replace with your file path
 word_list = txt_to_wordlist(file_path)
 word = random.choice(word_list)
 
-print(word)
+#print(word)
 print("WORDLE")
 print("You have 5 chances to answer the correct answer")
 
