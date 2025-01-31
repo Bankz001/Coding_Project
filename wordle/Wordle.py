@@ -51,7 +51,7 @@ file_path = './wordle/valid-wordle-words.txt'  # Replace with your file path
 word_list = txt_to_wordlist(file_path)
 word = random.choice(word_list)
 
-print(word)
+#print(word)
 print("WORDLE")
 print("You have 5 chances to answer the correct answer")
 
@@ -66,5 +66,5 @@ while answer != word and i>1:
 if answer == word :
     print(colored("Congratuation",'green'))
 else:
-    print("The correct answer is:", word)
+    print(colored("The correct answer is:", word,'red'))
     
