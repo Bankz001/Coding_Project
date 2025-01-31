@@ -66,5 +66,5 @@ while answer != word and i>1:
 if answer == word :
     print(colored("Congratuation",'green'))
 else:
-    print(colored("The correct answer is:", word,'red'))
+    print(colored("The correct answer is:"+ word,'red'))
     
